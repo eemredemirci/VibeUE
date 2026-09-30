@@ -135,7 +135,9 @@ if (-not $enginePath) {
     $candidates = @(
         "E:\Program Files\Epic Games\UE_$engineAssociation",
         "C:\Program Files\Epic Games\UE_$engineAssociation",
-        "D:\Program Files\Epic Games\UE_$engineAssociation"
+        "D:\Program Files\Epic Games\UE_$engineAssociation",
+        "F:\Epic Games\UE_$engineAssociation",
+        "F:\epic games\UE_$engineAssociation"
     )
     foreach ($c in $candidates) {
         if (Test-Path $c) { $enginePath = $c; break }
